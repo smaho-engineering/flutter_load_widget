@@ -70,7 +70,7 @@ class _LoadingProviderState extends State<LoadingProvider> {
   LoadingDismissFuture showLoading({
     bool? tapDismiss,
   }) {
-    tapDismiss ??= true;
+    tapDismiss ??= widget.themeData.tapDismiss;
     _realDismissDialog();
     var themeData = widget.themeData;
     var w = LoadingTheme(
